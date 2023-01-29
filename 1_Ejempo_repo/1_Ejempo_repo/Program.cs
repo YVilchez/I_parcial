@@ -16,7 +16,7 @@ namespace _1_Ejempo_repo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new valo2());
+            Application.Run(new Ejercicio2());
         }
     }
 }
