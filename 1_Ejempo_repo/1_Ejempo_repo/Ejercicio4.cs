@@ -31,5 +31,10 @@ namespace _1_Ejempo_repo
         {
 
         }
+
+        private void Ejercicio4_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
