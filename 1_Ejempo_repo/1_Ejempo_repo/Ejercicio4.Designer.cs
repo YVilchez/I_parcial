@@ -29,24 +29,27 @@ namespace _1_Ejempo_repo
         /// </summary>
         private void InitializeComponent()
         {
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.Fecha = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.dia = new System.Windows.Forms.TextBox();
+            this.Semana = new System.Windows.Forms.TextBox();
+            this.mes = new System.Windows.Forms.TextBox();
+            this.anio = new System.Windows.Forms.TextBox();
+            this.Ejecutar = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.Cita = new System.Windows.Forms.TextBox();
+            this.Cita2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // dateTimePicker1
+            // Fecha
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(12, 12);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 0;
+            this.Fecha.Location = new System.Drawing.Point(12, 12);
+            this.Fecha.Name = "Fecha";
+            this.Fecha.Size = new System.Drawing.Size(200, 20);
+            this.Fecha.TabIndex = 0;
             // 
             // label1
             // 
@@ -87,58 +90,85 @@ namespace _1_Ejempo_repo
             this.label4.Text = "Anio";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // textBox1
+            // dia
             // 
-            this.textBox1.Location = new System.Drawing.Point(64, 56);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 5;
+            this.dia.Location = new System.Drawing.Point(64, 56);
+            this.dia.Name = "dia";
+            this.dia.Size = new System.Drawing.Size(100, 20);
+            this.dia.TabIndex = 5;
             // 
-            // textBox2
+            // Semana
             // 
-            this.textBox2.Location = new System.Drawing.Point(64, 102);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 6;
+            this.Semana.Location = new System.Drawing.Point(64, 102);
+            this.Semana.Name = "Semana";
+            this.Semana.Size = new System.Drawing.Size(100, 20);
+            this.Semana.TabIndex = 6;
             // 
-            // textBox3
+            // mes
             // 
-            this.textBox3.Location = new System.Drawing.Point(64, 149);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 7;
+            this.mes.Location = new System.Drawing.Point(64, 149);
+            this.mes.Name = "mes";
+            this.mes.Size = new System.Drawing.Size(100, 20);
+            this.mes.TabIndex = 7;
             // 
-            // textBox4
+            // anio
             // 
-            this.textBox4.Location = new System.Drawing.Point(64, 197);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 8;
+            this.anio.Location = new System.Drawing.Point(64, 197);
+            this.anio.Name = "anio";
+            this.anio.Size = new System.Drawing.Size(100, 20);
+            this.anio.TabIndex = 8;
             // 
-            // button1
+            // Ejecutar
             // 
-            this.button1.Location = new System.Drawing.Point(235, 9);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Ejecutar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Ejecutar.Location = new System.Drawing.Point(235, 9);
+            this.Ejecutar.Name = "Ejecutar";
+            this.Ejecutar.Size = new System.Drawing.Size(75, 23);
+            this.Ejecutar.TabIndex = 9;
+            this.Ejecutar.Text = "Ejecutar";
+            this.Ejecutar.UseVisualStyleBackColor = true;
+            this.Ejecutar.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(9, 248);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(25, 13);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Cita";
+            // 
+            // Cita
+            // 
+            this.Cita.Location = new System.Drawing.Point(64, 248);
+            this.Cita.Name = "Cita";
+            this.Cita.Size = new System.Drawing.Size(100, 20);
+            this.Cita.TabIndex = 11;
+            // 
+            // Cita2
+            // 
+            this.Cita2.Location = new System.Drawing.Point(210, 248);
+            this.Cita2.Name = "Cita2";
+            this.Cita2.Size = new System.Drawing.Size(100, 20);
+            this.Cita2.TabIndex = 12;
             // 
             // Ejercicio4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(479, 283);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Cita2);
+            this.Controls.Add(this.Cita);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.Ejecutar);
+            this.Controls.Add(this.anio);
+            this.Controls.Add(this.mes);
+            this.Controls.Add(this.Semana);
+            this.Controls.Add(this.dia);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.Fecha);
             this.Name = "Ejercicio4";
             this.Text = "Ejercicio4";
             this.Load += new System.EventHandler(this.Ejercicio4_Load);
@@ -149,15 +179,18 @@ namespace _1_Ejempo_repo
 
         #endregion
 
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker Fecha;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox dia;
+        private System.Windows.Forms.TextBox Semana;
+        private System.Windows.Forms.TextBox mes;
+        private System.Windows.Forms.TextBox anio;
+        private System.Windows.Forms.Button Ejecutar;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox Cita;
+        private System.Windows.Forms.TextBox Cita2;
     }
 }

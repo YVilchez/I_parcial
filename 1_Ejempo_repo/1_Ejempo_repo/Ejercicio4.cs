@@ -36,5 +36,25 @@ namespace _1_Ejempo_repo
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DateTime fecha = Fecha.Value;
+
+            dia.Text = fecha.Day.ToString();
+
+            Semana.Text = fecha.DayOfWeek.ToString();
+
+            mes.Text = fecha.Month.ToString();
+
+            anio.Text = fecha.Year.ToString();
+
+            //No puede modificar fecha cita
+            int numerodias = Convert.ToInt32(dia.Text);
+            DateTime Fecha = DateTime.Now;
+
+            Cita2.Text = Fecha.AddDays(numerodias).ToString();
+
+        }
     }
 }
