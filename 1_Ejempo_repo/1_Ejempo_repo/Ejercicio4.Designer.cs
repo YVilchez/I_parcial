@@ -29,7 +29,7 @@ namespace _1_Ejempo_repo
         /// </summary>
         private void InitializeComponent()
         {
-            this.Fecha = new System.Windows.Forms.DateTimePicker();
+            this.Fechac = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,12 +44,12 @@ namespace _1_Ejempo_repo
             this.Cita2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // Fecha
+            // Fechac
             // 
-            this.Fecha.Location = new System.Drawing.Point(12, 12);
-            this.Fecha.Name = "Fecha";
-            this.Fecha.Size = new System.Drawing.Size(200, 20);
-            this.Fecha.TabIndex = 0;
+            this.Fechac.Location = new System.Drawing.Point(12, 12);
+            this.Fechac.Name = "Fechac";
+            this.Fechac.Size = new System.Drawing.Size(200, 20);
+            this.Fechac.TabIndex = 0;
             // 
             // label1
             // 
@@ -168,7 +168,7 @@ namespace _1_Ejempo_repo
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.Fecha);
+            this.Controls.Add(this.Fechac);
             this.Name = "Ejercicio4";
             this.Text = "Ejercicio4";
             this.Load += new System.EventHandler(this.Ejercicio4_Load);
@@ -179,7 +179,7 @@ namespace _1_Ejempo_repo
 
         #endregion
 
-        private System.Windows.Forms.DateTimePicker Fecha;
+        private System.Windows.Forms.DateTimePicker Fechac;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

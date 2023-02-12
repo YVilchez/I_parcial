@@ -39,7 +39,7 @@ namespace _1_Ejempo_repo
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DateTime fecha = Fecha.Value;
+            DateTime fecha = Fechac.Value;
 
             dia.Text = fecha.Day.ToString();
 
