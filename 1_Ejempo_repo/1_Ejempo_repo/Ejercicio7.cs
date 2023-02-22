@@ -19,6 +19,8 @@ namespace _1_Ejempo_repo
 
         private void bt_matriz_Click(object sender, EventArgs e)
         {
+            listBox1.Items.Clear();
+
             //MATRIZ
             //La , representa que es de 2 dimenciones
             //Fila, Columna
@@ -30,16 +32,22 @@ namespace _1_Ejempo_repo
 
             //int[,] matriz2 = new int[3, 4];
             //Genera numeros aleatorios
+
             Random random = new Random();
 
 
+
             //LLENAR ALEATORIAMENTE
-            Random rfila = new Random();
-            Random rcolumna = new Random();
+           //Random rfila = new Random();
+            //Random rcolumna = new Random();
 
 
-            int vfila = random.Next(1,10);
-            int vcolumna = random.Next(1, 10);
+            //int vfila = random.Next(1,10);
+            int vfila = Convert.ToInt32(tb_fila.Text);
+
+            //int vcolumna = random.Next(1, 10);
+            int vcolumna = Convert.ToInt32(tb_columna.Text);
+
             int[,] matriz2 = new int[vfila, vcolumna];
 
 
@@ -63,13 +71,20 @@ namespace _1_Ejempo_repo
 
             //MOSTRAR MATRIZ
             for (int fila = 0; fila < matriz2.GetLength(0); fila++)
-            {                                
+            {                                           //(1) dimension
                 for (int columna = 0; columna < matriz2.GetLength(1); columna++)
                 {
                     listBox1.Items.Add("La posicion: [" + fila + ", " + columna + "] = " + matriz2[fila, columna]);
                 }
 
             }
+
+            textBox1.Text= matriz2.GetLength(0).ToString() + "x" + matriz2.GetLength(1).ToString();
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

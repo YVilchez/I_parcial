@@ -37,16 +37,20 @@ namespace _1_Ejempo_repo
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(46, 34);
+            this.listBox1.ItemHeight = 20;
+            this.listBox1.Location = new System.Drawing.Point(69, 52);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(135, 121);
+            this.listBox1.Size = new System.Drawing.Size(200, 184);
             this.listBox1.TabIndex = 0;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // bt_arreglo
             // 
-            this.bt_arreglo.Location = new System.Drawing.Point(376, 34);
+            this.bt_arreglo.Location = new System.Drawing.Point(564, 52);
+            this.bt_arreglo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bt_arreglo.Name = "bt_arreglo";
-            this.bt_arreglo.Size = new System.Drawing.Size(98, 54);
+            this.bt_arreglo.Size = new System.Drawing.Size(147, 83);
             this.bt_arreglo.TabIndex = 1;
             this.bt_arreglo.Text = "Arreglo / Vector ";
             this.bt_arreglo.UseVisualStyleBackColor = true;
@@ -55,19 +59,21 @@ namespace _1_Ejempo_repo
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(199, 34);
+            this.comboBox1.Location = new System.Drawing.Point(298, 52);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(148, 21);
+            this.comboBox1.Size = new System.Drawing.Size(220, 28);
             this.comboBox1.TabIndex = 2;
             // 
             // Ejercicio6
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(513, 182);
+            this.ClientSize = new System.Drawing.Size(770, 280);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.bt_arreglo);
             this.Controls.Add(this.listBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Ejercicio6";
             this.Text = "Ejercicio6";
             this.ResumeLayout(false);

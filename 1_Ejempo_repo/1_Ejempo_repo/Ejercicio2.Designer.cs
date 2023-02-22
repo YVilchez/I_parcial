@@ -43,7 +43,7 @@ namespace _1_Ejempo_repo
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(54, 63);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 24);
+            this.label1.Size = new System.Drawing.Size(151, 33);
             this.label1.TabIndex = 0;
             this.label1.Text = "Numero_1";
             // 
@@ -52,22 +52,22 @@ namespace _1_Ejempo_repo
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(54, 133);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 24);
+            this.label2.Size = new System.Drawing.Size(151, 33);
             this.label2.TabIndex = 1;
             this.label2.Text = "Numero_2";
             // 
             // N1_tb
             // 
-            this.N1_tb.Location = new System.Drawing.Point(191, 63);
+            this.N1_tb.Location = new System.Drawing.Point(256, 60);
             this.N1_tb.Name = "N1_tb";
-            this.N1_tb.Size = new System.Drawing.Size(198, 29);
+            this.N1_tb.Size = new System.Drawing.Size(198, 40);
             this.N1_tb.TabIndex = 2;
             // 
             // N2_tb2
             // 
-            this.N2_tb2.Location = new System.Drawing.Point(191, 130);
+            this.N2_tb2.Location = new System.Drawing.Point(256, 130);
             this.N2_tb2.Name = "N2_tb2";
-            this.N2_tb2.Size = new System.Drawing.Size(198, 29);
+            this.N2_tb2.Size = new System.Drawing.Size(198, 40);
             this.N2_tb2.TabIndex = 3;
             // 
             // Operaciones_cb
@@ -79,16 +79,16 @@ namespace _1_Ejempo_repo
             "Resta",
             "Multiplicacion",
             "Division"});
-            this.Operaciones_cb.Location = new System.Drawing.Point(191, 200);
+            this.Operaciones_cb.Location = new System.Drawing.Point(256, 199);
             this.Operaciones_cb.Name = "Operaciones_cb";
-            this.Operaciones_cb.Size = new System.Drawing.Size(198, 32);
+            this.Operaciones_cb.Size = new System.Drawing.Size(198, 41);
             this.Operaciones_cb.TabIndex = 4;
             // 
             // Ejecutar_B
             // 
-            this.Ejecutar_B.Location = new System.Drawing.Point(243, 266);
+            this.Ejecutar_B.Location = new System.Drawing.Point(256, 270);
             this.Ejecutar_B.Name = "Ejecutar_B";
-            this.Ejecutar_B.Size = new System.Drawing.Size(106, 34);
+            this.Ejecutar_B.Size = new System.Drawing.Size(198, 45);
             this.Ejecutar_B.TabIndex = 5;
             this.Ejecutar_B.Text = "Ejecutar";
             this.Ejecutar_B.UseVisualStyleBackColor = true;
@@ -99,15 +99,15 @@ namespace _1_Ejempo_repo
             this.Resultado_lb.AutoSize = true;
             this.Resultado_lb.Location = new System.Drawing.Point(263, 328);
             this.Resultado_lb.Name = "Resultado_lb";
-            this.Resultado_lb.Size = new System.Drawing.Size(60, 24);
+            this.Resultado_lb.Size = new System.Drawing.Size(93, 33);
             this.Resultado_lb.TabIndex = 6;
             this.Resultado_lb.Text = "label3";
             // 
             // Ejercicio2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 33F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(677, 749);
             this.Controls.Add(this.Resultado_lb);
             this.Controls.Add(this.Ejecutar_B);
             this.Controls.Add(this.Operaciones_cb);
@@ -116,7 +116,7 @@ namespace _1_Ejempo_repo
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Ejercicio2";
             this.Text = "Ejercicio2";
             this.Load += new System.EventHandler(this.Ejercicio2_Load);
